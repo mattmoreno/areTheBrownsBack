@@ -34,10 +34,11 @@ class Game extends Component {
       .then(data => {
         this.setState({
           games: data,
-          myTeamGame: '2018123000',
-          week: 'REG16',
+          myTeamGame: '2019090801',
+          year: '2019',
+          week: 'REG1',
           awayTeam: 'browns',
-          homeTeam: 'ravens'
+          homeTeam: 'titans`'
         })
       }, () => {
         this.setState({
@@ -47,8 +48,8 @@ class Game extends Component {
   }
 
   render() {
-    if (this.state.requestFailed) return <img src={preloader} alt="Preloader" />
-    if (!this.state.games) return <img src={preloader} alt="Preloader" />
+    if (this.state.requestFailed) return null
+    if (!this.state.games) return null
 
     //console.log(this.state.games);
 
@@ -152,7 +153,7 @@ class Game extends Component {
               </div>
 
               <div id="fullbox" className="fullbox">
-                <a href={'https://www.nfl.com/gamecenter/'+ this.state.myTeamGame+'/2018/'+ this.state.week +'/'+ this.state.awayTeam +'@'+ this.state.homeTeam} target="_blank" rel="noopener noreferrer">Full Game Details</a>
+                <a href={'https://www.nfl.com/gamecenter/'+ this.state.myTeamGame+'/'+ this.state.year +'/'+ this.state.week +'/'+ this.state.awayTeam +'@'+ this.state.homeTeam} target="_blank" rel="noopener noreferrer">Full Game Details</a>
               </div>
 
             </div>
