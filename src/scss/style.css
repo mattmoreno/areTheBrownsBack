@@ -4,8 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
-@import url("https://use.fontawesome.com/releases/v5.0.7/js/all.js");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -21,7 +20,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #b00203;
-  --secondary: #6c757d;
+  --secondary: #E9068C;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -33,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open-Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Montserrat", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -63,13 +62,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Open-Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #000;
 }
 
 [tabindex="-1"]:focus {
@@ -490,7 +489,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1688,7 +1687,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .table-sm th,
@@ -1743,16 +1742,16 @@ pre code {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #d6d8db;
+  background-color: #f9b9df;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #c8cbcf;
+  background-color: #f7a2d4;
 }
 
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #c8cbcf;
+  background-color: #f7a2d4;
 }
 
 .table-success,
@@ -1861,7 +1860,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  color: #000;
   background-color: #212529;
   border-color: #32383e;
 }
@@ -1873,7 +1872,7 @@ pre code {
 }
 
 .table-dark {
-  color: #fff;
+  color: #000;
   background-color: #212529;
 }
 
@@ -2244,8 +2243,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+          box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
@@ -2350,8 +2349,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+          box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
@@ -2552,38 +2551,38 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #E9068C;
+  border-color: #E9068C;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: #c40576;
+  border-color: #b7056e;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #E9068C;
+  border-color: #E9068C;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #545b62;
-  border-color: #4e555b;
+  background-color: #b7056e;
+  border-color: #ab0467;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
 }
 
 .btn-success {
@@ -2839,39 +2838,39 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
+  color: #E9068C;
   background-color: transparent;
   background-image: none;
-  border-color: #6c757d;
+  border-color: #E9068C;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #E9068C;
+  border-color: #E9068C;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: #6c757d;
+  color: #E9068C;
   background-color: transparent;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #E9068C;
+  border-color: #E9068C;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 6, 140, 0.5);
 }
 
 .btn-outline-success {
@@ -3736,8 +3735,8 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+          box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
@@ -3970,16 +3969,16 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+          box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+  box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
+  box-shadow: 0 0 0 1px #000, 0 0 0 0.2rem rgba(176, 2, 3, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4174,8 +4173,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: #000;
+  border-color: #dee2e6 #dee2e6 #000;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5122,13 +5121,13 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #fff;
-  background-color: #6c757d;
+  background-color: #E9068C;
 }
 
 .badge-secondary[href]:hover, .badge-secondary[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #545b62;
+  background-color: #b7056e;
 }
 
 .badge-success {
@@ -5259,17 +5258,17 @@ input[type="button"].btn-block {
 }
 
 .alert-secondary {
-  color: #383d41;
-  background-color: #e2e3e5;
-  border-color: #d6d8db;
+  color: #790349;
+  background-color: #fbcde8;
+  border-color: #f9b9df;
 }
 
 .alert-secondary hr {
-  border-top-color: #c8cbcf;
+  border-top-color: #f7a2d4;
 }
 
 .alert-secondary .alert-link {
-  color: #202326;
+  color: #47022b;
 }
 
 .alert-success {
@@ -5533,19 +5532,19 @@ input[type="button"].btn-block {
 }
 
 .list-group-item-secondary {
-  color: #383d41;
-  background-color: #d6d8db;
+  color: #790349;
+  background-color: #f9b9df;
 }
 
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #383d41;
-  background-color: #c8cbcf;
+  color: #790349;
+  background-color: #f7a2d4;
 }
 
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #383d41;
-  border-color: #383d41;
+  background-color: #790349;
+  border-color: #790349;
 }
 
 .list-group-item-success {
@@ -5863,7 +5862,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open-Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5976,7 +5975,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open-Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6441,13 +6440,13 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #E9068C !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important;
+  background-color: #b7056e !important;
 }
 
 .bg-success {
@@ -6563,7 +6562,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #E9068C !important;
 }
 
 .border-success {
@@ -9351,11 +9350,11 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #E9068C !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #545b62 !important;
+  color: #b7056e !important;
 }
 
 .text-success {
@@ -9518,167 +9517,231 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@-webkit-keyframes modal-video {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+body {
+  background: url(../images/browns-stadium-bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
 
-@keyframes modal-video {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes modal-video-inner {
-  from {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes modal-video-inner {
-  from {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-.modal-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000000;
-  cursor: pointer;
-  opacity: 1;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video;
-          animation-name: modal-video;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
-}
-
-.modal-video-effect-exit {
-  opacity: 0;
-}
-
-.modal-video-effect-exit .modal-video-movie-wrap {
-  -webkit-transform: translate(0, 100px);
-  transform: translate(0, 100px);
-}
-
-.modal-video-body {
-  max-width: 940px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: table;
-}
-
-.modal-video-inner {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-
-.modal-video-movie-wrap {
-  width: 100%;
-  height: 0;
+/*==================================================
+	NBA TEAMS
+====================================================*/
+.ucbg {
+  color: #fff;
   position: relative;
-  padding-bottom: 56.25%;
-  background-color: #333;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video-inner;
-          animation-name: modal-video-inner;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  padding-top: 80px;
+  /*height: 100%; min-height:650px; margin-top:10px;*/
 }
 
-.modal-video-movie-wrap iframe {
+.ucbg h1 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-}
-
-.modal-video-close-btn {
-  position: absolute;
-  z-index: 2;
-  top: -35px;
-  right: -35px;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-}
-
-.modal-video-close-btn:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.modal-video-close-btn:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.modal-video-close-btn:before, .modal-video-close-btn:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  top: 50%;
+  top: 25px;
   left: 0;
-  margin-top: -1px;
-  background: #fff;
-  border-radius: 5px;
-  margin-top: -6px;
 }
 
-.card {
+.ucbg h2 {
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.arethey {
+  /*margin-top:60px;*/
+  margin-bottom: 80px;
+}
+
+.boxscore {
+  /*position: absolute; bottom: 20px; right:0; width: 100%;*/
+}
+
+.gameinfo h4, .gameinfo h5 {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.gameinfo h5 {
+  font-size: 14px;
+}
+
+.team.ari {
+  background: #97233F;
+}
+
+.team.atl {
+  background: #A71930;
+}
+
+.team.bal {
+  background: #241773;
+}
+
+.team.buf {
+  background: #00338D;
+}
+
+.team.car {
+  background: #101820;
+}
+
+.team.chi {
+  background: #0B162A;
+}
+
+.team.cin {
+  background: #FB4F14;
+}
+
+.team.cle {
+  background: #311D00;
+}
+
+.team.dal {
+  background: #041E42;
+}
+
+.team.den {
+  background: #002244;
+}
+
+.team.det {
+  background: #0076B6;
+}
+
+.team.gb {
+  background: #FFB612;
+}
+
+.team.hou {
+  background: #03202F;
+}
+
+.team.ind {
+  background: #002C5F;
+}
+
+.team.jax {
+  background: #101820;
+}
+
+.team.kc {
+  background: #E31837;
+}
+
+.team.lac {
+  background: #002A5E;
+}
+
+.team.la {
+  background: #002244;
+}
+
+.team.mia {
+  background: #008E97;
+}
+
+.team.min {
+  background: #4F2683;
+}
+
+.team.ne {
+  background: #002244;
+}
+
+.team.no {
+  background: #D3BC8D;
+}
+
+.team.nyg {
+  background: #0B2265;
+}
+
+.team.nyj {
+  background: #003F2D;
+}
+
+.team.oak {
+  background: #000000;
+}
+
+.team.phi {
+  background: #004C54;
+}
+
+.team.pit {
+  background: #101820;
+}
+
+.team.sf {
+  background: #AA0000;
+}
+
+.team.sea {
+  background: #002244;
+}
+
+.team.tb {
+  background: #D50A0A;
+}
+
+.team.ten {
+  background: #002A5C;
+}
+
+.team.was {
+  background: #773141;
+}
+
+.team img {
+  width: 75%;
+}
+
+.score {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 58px;
+  text-align: center;
+}
+
+.fullbox {
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  clear: both;
 }
 
-.card img {
-  cursor: pointer;
+.fullbox > a {
+  color: #fff;
 }
 
-.modal-video {
-  background-color: rgba(0, 0, 0, 0.95);
+/*==================================================
+           Bootstrap 4 Media Queries
+====================================================*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  #introduction p.lead {
+    font-size: 24px;
+  }
+  .ucbg {
+    min-height: 0;
+  }
+  .ucbg h2 {
+    font-size: 180px;
+  }
 }
 
-.modal-video-body {
-  max-width: 1100px;
-}
-/*# sourceMappingURL=App.css.map */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*# sourceMappingURL=style.css.map */

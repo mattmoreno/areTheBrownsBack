@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './scss/style.min.css';
+import './scss/style.css';
 import Game from "./Game/Game.js";
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
-import preloader from '../images/preloader.svg';
+//import preloader from '../images/preloader.svg';
 
 const urlForUsername = 'http://www.nfl.com/liveupdate/scores/scores.json';
 
@@ -121,8 +121,8 @@ class Game extends Component {
 
     return (
       <React.Fragment>
-        <div className="section ucbg h-100">
-        <div className="container h-100">
+        <div className="section ucbg">
+        <div className="container">
           <div class="align-items-center justify-content-center">
           <h1>Are the Browns Back?</h1>
           <div className="arethey">
