@@ -34,11 +34,11 @@ class Game extends Component {
       .then(data => {
         this.setState({
           games: data,
-          myTeamGame: '2019110309',
+          myTeamGame: '2019111002',
           year: '2019',
-          week: 'REG9',
-          awayTeam: 'browns',
-          homeTeam: 'broncos'
+          week: 'REG10',
+          awayTeam: 'bills',
+          homeTeam: 'browns'
         })
       }, () => {
         this.setState({
